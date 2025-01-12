@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
-class ProfilePage  extends StatelessWidget {
-  const ProfilePage ({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,25 +12,24 @@ class ProfilePage  extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.fromLTRB(20.0,30,20,10),
+        padding: const EdgeInsets.fromLTRB(20.0, 10, 20, 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CircleAvatar( // Profile picture
+            CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('assets/profile_pic.jpg'), // Replace with your image
             ),
-
-            const Text( // Name and username
+            const SizedBox(height: 16),
+            const Text(
               'Lee Jong Hyun',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const Text( 
+            const Text(
               '@Corner.Pic_',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
-
-            const Padding( // Bio
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Text(
                 'This is a short bio about yourself. You can add more details about who you are!',
@@ -40,8 +37,7 @@ class ProfilePage  extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
             ),
-
-            Row( // Email and phone number
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Icon(Icons.email, color: Colors.blue),
@@ -58,8 +54,8 @@ class ProfilePage  extends StatelessWidget {
                 Text('+82 10 5686 1483'),
               ],
             ),
-
-            Row( // Social media icons
+            const SizedBox(height: 16),
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
@@ -86,7 +82,6 @@ class ProfilePage  extends StatelessWidget {
                 ),
               ],
             ),
-
           ],
         ),
       ),
