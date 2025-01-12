@@ -1,0 +1,5 @@
+- [ ]  **Build a Simple UI**
+    - [ ]  Create a profile app with:
+        - [ ]  An image at the top.
+        - [ ]  Name and description below it.
+        - [ ]  Button to show a message (using `SnackBar` or `AlertDialog`).
