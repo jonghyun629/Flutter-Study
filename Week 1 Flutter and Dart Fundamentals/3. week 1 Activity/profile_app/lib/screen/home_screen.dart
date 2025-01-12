@@ -14,7 +14,7 @@ class ProfilePage  extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.fromLTRB(20.0,30,20,10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
