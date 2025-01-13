@@ -16,11 +16,14 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            // Profile picture
             CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('assets/profile_pic.jpg'), // Replace with your image
             ),
+
             const SizedBox(height: 16),
+            // Profile details
             const Text(
               'Lee Jong Hyun',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -29,6 +32,8 @@ class ProfilePage extends StatelessWidget {
               '@Corner.Pic_',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
+
+            // Bio
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Text(
@@ -37,6 +42,8 @@ class ProfilePage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
             ),
+
+            // Contact details
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
@@ -45,7 +52,9 @@ class ProfilePage extends StatelessWidget {
                 Text('jonghyun629@gmail.com'),
               ],
             ),
+
             const SizedBox(height: 8),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
@@ -54,7 +63,10 @@ class ProfilePage extends StatelessWidget {
                 Text('+82 10 5686 1483'),
               ],
             ),
+
             const SizedBox(height: 16),
+
+            // Social media links
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
